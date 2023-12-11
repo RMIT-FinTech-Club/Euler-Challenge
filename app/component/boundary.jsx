@@ -1,7 +1,9 @@
-export default function Boundary({label}) {
+import clsx from 'clsx';
+
+export default function Boundary({label, children}) {
     return (
         <div
-        className={clsx('relative rounded-lg border border-dashed p-4 lg:p-9')}
+        className={clsx('relative border-red-400 rounded-lg border border-dashed p-4 lg:p-9')}
         >
           <div
             className={clsx(

@@ -1,5 +1,7 @@
+'use client'
 import Input from './input';
 import Question from './question';
+import Button from '../component/error-button';
 export default function Page({params}) {
 
     const slug = params.slug;
@@ -10,7 +12,6 @@ export default function Page({params}) {
         <div className="space-y-8">
             <h1 className="text-xl font-medium text-gray-300">{route}</h1>
             <Question slug={slug} />
-            {/* <Input answer={} /> */}
         </div>
     )
 }
