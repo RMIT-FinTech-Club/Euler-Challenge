@@ -16,7 +16,7 @@ const question2 = () => {
     return (
         <>
             <p>There are a total of 4 coins with value of 1, 3, 4, 5.</p>
-            <p>Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, retur</p>
+            <p>Return the fewest number of coins that you need to make up that amount = 21. If that amount of money cannot be made up by any combination of the coins, return -1</p>
             <p><strong>Note: You may assume that you have an infinite number of each kind of coin.</strong></p>
         </>
     )
