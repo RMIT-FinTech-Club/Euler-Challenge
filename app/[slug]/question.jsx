@@ -6,7 +6,7 @@ const question1 = () => {
 
     return (
         <>
-            <p>A child is running up a staircase with n steps and can hop either 1 step, 2 steps at a time. How many possible ways the child can run up the stairs which have <strong>20</strong> steps.</p>
+            <p>A child is running up a staircase with n steps and can hop either 1 step, 2 steps at a time. How many possible ways the child can run up the stairs which have <strong>50</strong> steps.</p>
 
         </>
     )
@@ -15,12 +15,9 @@ const question1 = () => {
 const question2 = () => {
     return (
         <>
-            <p>Using a combination of grey square tiles and oblong tiles chosen from: red tiles (measuring two units), green tiles (measuring three units), and blue tiles (measuring four units), it is possible to tile a row measuring five units in length in exactly fifteen different ways.</p>
-
-            <div className="flex justify-center">
-                <img src="/tiles.png" alt="question2"/>
-            </div>
-            <p>How many ways can a row measuring 50 units in length be tiled?</p>
+            <p>There are a total of 4 coins with value of 1, 3, 4, 5.</p>
+            <p>Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, retur</p>
+            <p><strong>Note: You may assume that you have an infinite number of each kind of coin.</strong></p>
         </>
     )
 };
@@ -29,13 +26,20 @@ const question2 = () => {
 const question3 = () => {
     return (
         <>
-            <p>In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation:</p>
-            <blockquote>1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p).</blockquote>
-            <p>It is possible to make £2 in the following way:</p>
-            <blockquote>1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p</blockquote>
-            <p>How many different ways can £2 be made using any number of coins?</p>
+            <p>
+            By counting carefully it can be seen that a rectangular grid measuring
+            $3$ by $2$ contains eighteen rectangles:
+            </p>
+            <div className="flex justify-center">
+            <img src="/tiles.png" alt="question2" />
+            </div>
+            <p>
+            Although there exists no rectangular grid that contains exactly two
+            million rectangles, find the area of the grid with the nearest
+            solution.
+            </p>
         </>
-    )
+    );
 }
 
 function getQuestion(slug) {
@@ -44,17 +48,17 @@ function getQuestion(slug) {
         case 'question1':
             return {
                 detail: question1(),
-                answer: '10946'
+                answer: '20365011074'
             }
         case 'question2':
             return {
                 detail: question2(),
-                answer: '190569291'
+                answer: '5'
             }
         case 'question3':
             return {
                 detail: question3(),
-                answer: '73682'
+                answer: '27.2'
             }
     }
 }
